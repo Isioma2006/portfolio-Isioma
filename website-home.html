@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kinky</title>
+  <link rel="stylesheet" href="website2.css">
+</head>
+
+<body>
+  <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+      <li><a href="website-home.html">HOME</a></li>
+      <li><a href="work.html">WORK!</a></li>
+      <li><a href="profile.html">PROFILE</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      
+    </ul>
+    <ul>
+      <li><a href="#">Yoo, it's kinky</a></li>
+      <li class="hideOnMobile"><a href="website-home.html">HOME</a></li>
+      <li class="hideOnMobile"><a href="work.html">WORK!</a></li>
+      <li class="hideOnMobile"><a href="profile.html">PROFILE</a></li>
+      <li class="hideOnMobile"><a href="contact.html">Contact Us</a></li>
+    
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+   <h3>Dear black joy</h3>
+  <p>This space is safe space. A humble community of hair experts that know what's best for you. Yes, you!
+    See, we believe that when your hair's good, you're good too. Go girlll.
+  </p>
+  
+  <button type="submit" class="btn">
+    <a href="contact.html" class="btn">OFFICIAL WEBSITE</a>
+  </button>
+</div>
+
+  <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+    
+  </script>
+</body>
+</html>
