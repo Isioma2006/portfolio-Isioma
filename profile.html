@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kinky</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+  <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+      <li><a href="website-home.html">HOME</a></li>
+      <li><a href="work.html">WORK!</a></li>
+      <li><a href="profile.html">PROFILE</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      
+    </ul>
+    <ul>
+      <li><a href="#">Yoo, it's kinky</a></li>
+      <li class="hideOnMobile"><a href="website-home.html">HOME</a></li>
+      <li class="hideOnMobile"><a href="work.html">WORK!</a></li>
+      <li class="hideOnMobile"><a href="profile.html">PROFILE</a></li>
+      <li class="hideOnMobile"><a href="contact.html">Contact Us</a></li>
+    
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+
+  
+
+  <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+    
+  </script>
+  
+  <div class="wrapper">
+    <img src="cc9ff16c-1af2-4e9f-9062-2ea9cdcdeeda-1.jpeg">
+    <div class="text box">
+      <h1>Hi, I'm Isioma.</h1>
+      <p>A hairstylist, vendor and I like to refer to myself as a 
+        black 'hair-care' expert. Check us out, join the family, let's see
+        what we can do for you.
+        Whether you are patronising our branches across Nigeeria or just
+        getting the extensions you need through our website, keep in mind that I am the creator
+        of this franchise. 
+        I specialize in 'feel good'.
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>
